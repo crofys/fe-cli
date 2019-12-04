@@ -4,7 +4,7 @@
  * @Description:
  * @Author: 徐长剑
  * @Date: 2019-12-04 10:29:09
- * @LastEditTime: 2019-12-04 18:27:35
+ * @LastEditTime: 2019-12-04 18:32:33
  * @LastEditors: 徐长剑
  */
 const { prompt } = require('inquirer')
@@ -41,6 +41,12 @@ start()
 async function start() {
   const { version, commit, commitType } = await prompt(questions)
 
+  console.log('提交代码')
+  exec('git add .')
+
+  console.log('备注信息')
+  exec(`git commit -am ${commitType}:${commit}`)
+
   switch (version) {
     case '小版本':
       exec('npm version patch')
@@ -55,12 +61,6 @@ async function start() {
       exec('npm version premajor')
       break
   }
-
-  console.log('提交代码')
-  exec('git add .')
-
-  console.log('备注信息')
-  exec(`git commit -am ${commitType}:${commit}`)
 
   console.log('推到远程')
   exec('git push')
