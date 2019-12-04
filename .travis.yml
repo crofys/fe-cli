@@ -1,10 +1,11 @@
 language: node_js
 node_js:
-  - "12.13"
+  - "12.10.0"
 
 deploy:
   provider: npm
-  email: "crofys_mail@163.com"
-  api_key: "be2ee556-c55c-4a23-945c-f8f62813f588"
+  email: "$NPM_EMAIL"
+  api_key: "$NPM_TOKEN"
+  skip_cleanup: true
   on:
     branch: master
