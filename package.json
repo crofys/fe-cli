@@ -1,0 +1,22 @@
+{
+  "name": "@crofys/fe-cli",
+  "version": "1.1.0",
+  "description": "前端脚手架集合",
+  "main": "index.js",
+  "bin": {
+    "fe": "bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "npm publish --access=public"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "commander": "^4.0.1",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^7.0.0",
+    "ora": "^4.0.3"
+  }
+}
