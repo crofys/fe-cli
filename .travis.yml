@@ -5,8 +5,8 @@ node_js:
 deploy:
   provider: npm
   email: "crofys_mall@163.com"
-  api_key:
-    secure: "96b11570-f677-4fbe-afae-3501a6459196"
+  api_key: "96b11570-f677-4fbe-afae-3501a6459196"
   skip_cleanup: true
+  edge: true
   on:
     branch: master
