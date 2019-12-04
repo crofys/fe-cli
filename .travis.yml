@@ -7,4 +7,4 @@ deploy:
   email: "crofys_mail@163.com"
   api_key: "be2ee556-c55c-4a23-945c-f8f62813f588"
   on:
-    branch: production
+    branch: master
