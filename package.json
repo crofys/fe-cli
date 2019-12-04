@@ -6,6 +6,9 @@
   "bin": {
     "fe": "bin/index.js"
   },
+  "scripts": {
+    "test": "测试成功"
+  },
   "author": "",
   "license": "ISC",
   "publishConfig": {

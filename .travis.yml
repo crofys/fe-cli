@@ -2,7 +2,6 @@ jobs:
   include:
     - stage: npm release
       node_js: "12.13"
-      script: yarn install
       deploy:
         provider: npm
         email: "$NPM_EMAIL"
