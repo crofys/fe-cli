@@ -1,17 +1,8 @@
-publish:
+jobs:
   include:
     - stage: npm release
       node_js: "12.13"
-      branchs:
-        only:
-          - master
-      cache:
-        directories:
-          - node_modules
-      script:
-        - echo "skipping tests"
-      install:
-        - yarn install
+      script: ehco "hello word"
       deploy:
         provider: npm
         email: "$NPM_EMAIL"
