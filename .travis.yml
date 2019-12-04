@@ -4,8 +4,8 @@ node_js:
 
 deploy:
   provider: npm
-  email: "crofys_mall@163.com"
-  api_key: "96b11570-f677-4fbe-afae-3501a6459196"
+  email: "$NPM_EMAIL"
+  api_key: "$NPM_TOKEN"
   skip_cleanup: true
   edge: true
   on:
