@@ -1,13 +1,14 @@
 {
   "name": "@crofys/fe-cli",
-  "version": "3.1.1-0",
+  "version": "1.4.0",
   "description": "前端脚手架集合",
   "main": "index.js",
   "bin": {
     "fe": "bin/index.js"
   },
   "scripts": {
-    "test": "echo 测试成功"
+    "test": "echo 测试成功",
+    "push": "node ./script/index"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +20,7 @@
     "commander": "^4.0.1",
     "download-git-repo": "^3.0.2",
     "inquirer": "^7.0.0",
-    "ora": "^4.0.3"
+    "ora": "^4.0.3",
+    "shelljs": "^0.8.3"
   }
 }
