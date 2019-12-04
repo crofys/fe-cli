@@ -2,7 +2,7 @@ jobs:
   include:
     - stage: npm release
       node_js: "12.13"
-      script: ehco "hello word"
+      script: echo "hello word"
       deploy:
         provider: npm
         email: "$NPM_EMAIL"
