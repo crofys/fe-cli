@@ -6,10 +6,6 @@
   "bin": {
     "fe": "bin/index.js"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "publish": "npm publish --access=public"
-  },
   "author": "",
   "license": "ISC",
   "publishConfig": {
